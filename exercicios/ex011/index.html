@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <audio src="midia/Charlie Brown Jr - Um Lugar Ao Sol.mp3" controls autoplay></audio>
+    <audio src="midia/06-spc-que se chama amor.mp3" controls autoplay></audio> 
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Charlie Brown Jr - Um Lugar Ao Sol.mp3" type="audio/ogg">
+        <source src="midia/06-spc-que se chama amor.mp3" type="audio/MP3">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/Charlie Brown Jr - Um Lugar Ao Sol.mp3"> Clique aqui para baixar o Arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

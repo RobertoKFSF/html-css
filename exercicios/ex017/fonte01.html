@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            	em	->	relativo ao tamanho natural da fonte
+	            ex	->	relativo a altura x da fonte
+	            rem	->	tipo em, mas relativo a fonte configurada no body
+	            vw	->	relativo a largura da view port
+	            vh	->	relativo a altura da view port
+	            %	->	porcentagem
+
+                Recomendação w3c:  "px" ou "em"
+
+                Altura padrão:  16px ou 1em
+            */
+            font-size: 1em;
+            
+            /* weight = peso
+            width = largura
+            height = altura
+            */
+        }
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder; /* lighter, normal, bold, bolder  ou 100 a 900*/
+            font-size: 3em;
+            font-style: italic;
+            /*shorthand font 
+            
+            - font-style -> font-weight -> font-size -> font - family*/
+
+        }
+
+        h2 {
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            /* Resumo do h1 que tambem funciona */
+            /* Caso eu não queira o italic (exemplo), eu faço assim 
+            font: bolder 2em 'Work Sans', sans-serif;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aperiam reiciendis nihil repudiandae rerum cum perspiciatis itaque veniam dolore harum omnis magni, eveniet dolorum impedit odit maiores provident, consequuntur facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias est molestiae tenetur magni, hic natus. Earum debitis, placeat labore minima velit quidem similique sequi! Repellendus optio recusandae voluptates. Dicta, nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae labore, molestias illo ipsa, maiores, iusto est fugiat exercitationem expedita odit dolore vero veniam quos cupiditate ipsum ducimus quasi consequuntur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime explicabo aut magni voluptatum ex ab excepturi eos facilis rerum, ullam voluptate consequatur veniam veritatis delectus placeat nisi, perspiciatis cum.</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cumque accusantium vero quisquam nulla dignissimos velit libero eveniet quia voluptate dolore ipsam adipisci totam vel, magni aperiam iure pariatur quo.</p>
+</body>
+</html>

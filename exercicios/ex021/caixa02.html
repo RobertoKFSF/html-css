@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        header {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(66, 66, 66);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+            padding: 10px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 18px 0px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.479);
+        }
+        article {
+            background-color: lightgray;
+            padding: 6px;
+            border: 5px;
+            outline-style: solid;
+        }
+        article > aside {
+            background-color: rgb(95, 95, 95);
+        }
+        #ler {
+            color: black;
+        }
+        #ler:hover{
+            text-decoration: none;
+        }
+        #ler > p {
+            display: none;
+        }
+        #ler:hover > p{
+            display: block;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0;
+        }
+        #assuntos > p {
+            margin-top: 6px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 25%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias da semana</h1>
+        <nav>
+            <a href="#">Esportes</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Música</a>
+            <a href="#">Influencers</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi porro fugiat perferendis tempore voluptates reiciendis accusamus necessitatibus. Labore, repellendus doloremque. Libero sequi cumque unde soluta maiores consequatur nobis nisi! Molestiae!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article id="ler">Ler mais...
+                <p>Hoje o Fluminense enfrenta o Internacional de Porto Alegre no gigante da beira-rio. Numa partida válida pela Copa Betano do Brasil 2025.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Roberto Kleber</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
