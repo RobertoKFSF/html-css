@@ -90,10 +90,9 @@ h2 {
 }
 div.video {
     background-color: #00530a;
-    margin-bottom: 30px -20px;
-    margin: 15px -20px 30px -20px;
-    padding: 30px;
-    padding-bottom: 50%;
+    margin: 0px -20px 30px -20x;
+    padding: 20px;
+    padding-bottom: 59%;
 
     position: relative;
 }
@@ -113,12 +112,12 @@ aside {
 aside > h3 {
     background-color: #3d7c31;
     color: white;
-    padding: 10px;
+    padding: 5px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
 aside > ul {
-    list-style-type: '🗸';
+    list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
 }
@@ -131,4 +130,10 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.459);
     font-size: 0.8em;
  }
-
+ footer a {
+    color: rgb(127, 161, 255);
+    text-decoration: none;
+ }
+footer a:hover {
+    text-decoration: underline;
+}
