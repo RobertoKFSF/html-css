@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+            font-family: 'sriracha';
+            src: url('fontes/Sriracha/Sriracha-Regular.ttf') format('opentype');
+}
+@font-face {
+            font-family: 'passion';
+            src: url('fontes/Passion_One/PassionOne-Regular.ttf') format('opentype');
+            font-weight: normal;
+}
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: -65px;
+    margin-left: -20px;
+    height: 95%;
+    width: auto;
+}
+header > h1 {
+    padding-top: 120px;
+    font-family: 'passion';
+    font-size: 10vw;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+header > h3 {
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+div {
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+div > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.522);
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-family: 'sriracha';
+    font-size: 4vw;
+    font-weight: normal;
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#img2 {
+    background-image: url(imagens/background002.jpg);
+}
+#img2 > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.522);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+}
+footer {
+    background-color: black;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer > a:hover {
+    text-decoration: underline;
+}
+#fim {
+    margin-bottom: 120px;
+}
