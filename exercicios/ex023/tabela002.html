@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+        }
+        table {
+            width: 200px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .num {
+            text-align: right;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        caption {
+            font-size: 1,5em;
+            font-weight: bolder;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -15px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(even) { /* 2n-1 */
+            background-color: azure;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(odd) { /* 2n */
+            background-color: rgb(244, 255, 149);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABALEAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col">% da<br> 
+                   População 
+                </th>
+                <th scope="col">Comparativo <br>
+                Com Países</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td>21,9%</td>
+                <td>Espanha</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td>10,1%</td>
+                <td>Sri Lanka</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td>8,2%</td>
+                <td>Países Baixos</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td>7,1%</td>
+                <td>Chade</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+                <td>5,4%</td>
+                <td>Bolívia</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+                <td>5,4%</td>
+                <td>Belgica</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+                <td>4,5%</td>
+                <td>Bielorrússia</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+                <td>4,3%</td>
+                <td>Emirados Árabes
+                Unidos</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+                <td>4,1%</td>
+                <td>Áustria</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+                <td>3,4%</td>
+                <td>Sérvia</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+                <td>3,4%</td>
+                <td>Sérvia</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Maranhão</td>
+                <td class="num">7 075 181</td>
+                <td>3,4%</td>
+                <td>Paraguai</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>Goiás</td>
+                <td class="num">7 018 354</td>
+                <td>3,3%</td>
+                <td>Paraguai</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>Amazonas</td>
+                <td class="num">4 144 597</td>
+                <td>2,0%</td>
+                <td>Líbano</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Espírito Santo</td>
+                <td class="num">4 018 650</td>
+                <td>1,9%</td>
+                <td>Líbano</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Paraíba</td>
+                <td class="num">4 018 127</td>
+                <td>1,9%</td>
+                <td>Líbano</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 506 853</td>
+                <td>1,7%</td>
+                <td>Uruguai</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 484 466</td>
+                <td>1,7%</td>
+                <td>Uruguai</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Alagoas</td>
+                <td class="num">3 337 357</td>
+                <td>1,6%</td>
+                <td>Uruguai</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Piauí</td>
+                <td class="num">3 273 227</td>
+                <td>1,6%</td>
+                <td>Kuwait</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 268</td>
+                <td>1,4%</td>
+                <td>Lituânia</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 778 986</td>
+                <td>1,3%</td>
+                <td>Jamaica</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe</td>
+                <td class="num">2 298 696</td>
+                <td>1,1%</td>
+                <td>Namíbia</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td class="num">1 777 225</td>
+                <td>0,8%</td>
+                <td>Gabão</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins</td>
+                <td class="num">1 572 866</td>
+                <td>0,7%</td>
+                <td>Bahrein</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre</td>
+                <td class="num">881 935</td>
+                <td>0,4%</td>
+                <td>Fiji</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapá</td>
+                <td class="num">845 731</td>
+                <td>0,4%</td>
+                <td>Fiji</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima</td>
+                <td class="num">605 761</td>
+                <td>0,3%</td>
+                <td>Luxemburgo</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">Total de Habitantes</th>
+                <td colspan="2"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+        <table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas inventore? Eum molestiae, odio expedita eius, inventore possimus laudantium delectus necessitatibus vero provident enim dolorum cupiditate veritatis animi quisquam quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita quidem dicta officia culpa eligendi? Libero consectetur eum ab vero facilis cumque, quasi consequuntur blanditiis? Magni, nemo. Voluptate, optio ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cum inventore soluta totam accusamus deleniti nam atque veritatis deserunt dolores veniam facere. Similique maiores, totam nisi blanditiis suscipit aspernatur quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique necessitatibus illo dolor, est dicta, quae non dolorem tempora et quod eveniet vero labore ex officiis consectetur ducimus error! Repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi cum perspiciatis, inventore soluta vero dignissimos eligendi quae ullam error nam necessitatibus sint, est recusandae ipsa, non voluptatum. Consequuntur, aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis dignissimos rerum eaque ad, hic tempora architecto corrupti inventore dolorem neque fuga voluptate, voluptates facilis ipsam maxime illo veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad aliquam vitae nesciunt ab, optio aspernatur ratione perspiciatis vel deserunt provident, veritatis molestiae labore praesentium? Mollitia alias quasi in itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, molestiae optio quaerat dicta alias dignissimos accusamus tenetur? Provident commodi qui quia labore aperiam? Ut vel deleniti, error eos dolor sunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quod sapiente reprehenderit odio quas repudiandae nam? Natus, fugit harum numquam officia eos architecto placeat doloribus. Labore maxime nemo accusantium ducimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo delectus consequatur quaerat deserunt cupiditate minima fuga at nihil eius voluptates autem consectetur asperiores, non eum architecto optio, perspiciatis eaque sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam autem ad minus quo necessitatibus voluptates eum laboriosam qui architecto nesciunt labore, quaerat aperiam omnis. Eligendi, veniam! Dolorum, natus aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, iure vero? Repellendus mollitia consectetur amet incidunt esse doloremque dolores laudantium aliquid quo. Inventore optio sunt nisi obcaecati est quo corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque ipsam. Perspiciatis, tempore impedit? Distinctio explicabo adipisci laborum odio aliquid ullam. Voluptatem temporibus, assumenda explicabo commodi reiciendis a possimus nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid accusantium et cumque dignissimos autem explicabo quidem vitae temporibus, eveniet, sint reiciendis, officiis ut illo excepturi impedit delectus eaque rem maiores.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas inventore? Eum molestiae, odio expedita eius, inventore possimus laudantium delectus necessitatibus vero provident enim dolorum cupiditate veritatis animi quisquam quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita quidem dicta officia culpa eligendi? Libero consectetur eum ab vero facilis cumque, quasi consequuntur blanditiis? Magni, nemo. Voluptate, optio ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cum inventore soluta totam accusamus deleniti nam atque veritatis deserunt dolores veniam facere. Similique maiores, totam nisi blanditiis suscipit aspernatur quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique necessitatibus illo dolor, est dicta, quae non dolorem tempora et quod eveniet vero labore ex officiis consectetur ducimus error! Repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi cum perspiciatis, inventore soluta vero dignissimos eligendi quae ullam error nam necessitatibus sint, est recusandae ipsa, non voluptatum. Consequuntur, aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis dignissimos rerum eaque ad, hic tempora architecto corrupti inventore dolorem neque fuga voluptate, voluptates facilis ipsam maxime illo veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad aliquam vitae nesciunt ab, optio aspernatur ratione perspiciatis vel deserunt provident, veritatis molestiae labore praesentium? Mollitia alias quasi in itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, molestiae optio quaerat dicta alias dignissimos accusamus tenetur? Provident commodi qui quia labore aperiam? Ut vel deleniti, error eos dolor sunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quod sapiente reprehenderit odio quas repudiandae nam? Natus, fugit harum numquam officia eos architecto placeat doloribus. Labore maxime nemo accusantium ducimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo delectus consequatur quaerat deserunt cupiditate minima fuga at nihil eius voluptates autem consectetur asperiores, non eum architecto optio, perspiciatis eaque sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam autem ad minus quo necessitatibus voluptates eum laboriosam qui architecto nesciunt labore, quaerat aperiam omnis. Eligendi, veniam! Dolorum, natus aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, iure vero? Repellendus mollitia consectetur amet incidunt esse doloremque dolores laudantium aliquid quo. Inventore optio sunt nisi obcaecati est quo corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque ipsam. Perspiciatis, tempore impedit? Distinctio explicabo adipisci laborum odio aliquid ullam. Voluptatem temporibus, assumenda explicabo commodi reiciendis a possimus nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid accusantium et cumque dignissimos autem explicabo quidem vitae temporibus, eveniet, sint reiciendis, officiis ut illo excepturi impedit delectus eaque rem maiores.
+        </p>
+        </table>
+    </table>
+</body>
+</html>
