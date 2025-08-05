@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            height: 400px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
+        }
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+        <!--
+        HIERARQUIA DE TABELAS (simples)
+        Table = tabela
+        TABLE ROW = Linha de tabela = <tr>
+        TABLE HEADER = cabeçalho de tabela
+        TABLE DATA = Dado de tabela  = <td>      
+        -->
+        <table>
+            <tr class="linha1"> <!--Primeira linha -->
+                <td>A1
+                <td>B1
+                <td>C1
+            </tr>
+            <tr class="linha2">
+                <td>A2
+                <td>B2
+                <td class="numero">C2
+            </tr>
+            <tr class="linha3">
+                <td>A3</td>
+                <td>B3</td>
+                <td class="numero">C3</td>
+            </tr>
+            <tr class="linha4">
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+                <!--Caso a hierarquia seja desrespeitada exemplo escrever algo fora do td no fim ele aparece acima da tabela-->
+            </tr>
+        </table>
+</body>
+</html>
