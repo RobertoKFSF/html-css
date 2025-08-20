@@ -9,7 +9,7 @@
         div.conteiner  {
             background-color: lightcoral;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
 
         div.item {
@@ -17,20 +17,33 @@
             border: 1px solid black;
             text-align: center;
             flex-basis: 200px;
-            flex-grow: 1;
-            flex-shrink: 1;
             
         }
         div.item:hover {
             background-color: rgb(56, 56, 255);
         }
+        div#cxa {
+            flex-shrink: 1;
+            flex-grow: 0;
+
+        }
+        div#cxb {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+        div#cxc {
+            flex-shrink: 1;
+            flex-grow: 4;
+
+        }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
 
     </div>
 </body>
