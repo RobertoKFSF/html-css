@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fluminense48.png" type="image/x-icon">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner  {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+        div.item:hover {
+            background-color: rgb(56, 56, 255);
+        }
+        div#cxa {
+            flex-shrink: 4;
+            flex-grow: 0;
+
+        }
+        div#cxb {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+        div#cxc {
+            flex-shrink: 1;
+            flex-grow: 4;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
+
+    </div>
+</body>
+</html>
