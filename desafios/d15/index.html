@@ -19,15 +19,26 @@
         p {
             margin: 8px 5px;
         }
-        main {
+        section.flex-cont {
+            padding: 20px;
             background-color: rgb(199, 199, 199);
+
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: column nowrap;
         }
 
-        img, iframe {
-            align-items: flex-end;
+        section > article {
+            border: 2px blue;
         }
+
+        article.text-media {
+            display: flex;
+        }
+
+        article.text {
+            display: flex;
+        }
+        
     </style>
 </head>
 <body>
@@ -36,6 +47,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta ab quidem veniam? Nesciunt culpa voluptas dolor illum a fuga nam maxime ab, deleniti necessitatibus quaerat provident earum sequi recusandae!</p>
     </header>
     <main>
+        <section class="flex-cont">
+            <article class="media-text">
+                <div class="text">
         <h2>Element Media > Text</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam nam nesciunt odit officia molestias omnis illum veritatis rerum a. Quas tempore fugiat expedita sed error voluptatem iusto eum rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis unde magni delectus qui ea voluptatibus adipisci. Quaerat enim facere iste vero, beatae minus fugit quam deserunt porro nulla obcaecati!</p>
         <img src="espacokj.png" alt="">
@@ -43,6 +57,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae voluptates facere qui pariatur neque voluptatem fuga ipsa hic eius, sunt eveniet autem libero et delectus eligendi aliquid blanditiis asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quam ratione, culpa voluptatem quos, fugiat aliquam numquam laudantium ut quasi, architecto sapiente ipsum veritatis amet fugit quod reiciendis praesentium vel?</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae atque qui illo ex consectetur quisquam esse exercitationem earum, natus porro, quaerat et distinctio maxime odio optio molestiae obcaecati mollitia culpa?</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=Bg07j3u_0pg3PRb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </section>
+        </article>
+        </div>
     </main>
     <footer>
         <h2>Conteúdo Normal</h2>
