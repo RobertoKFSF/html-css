@@ -10,23 +10,35 @@
         background-color: rgb(155, 155, 155);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
+        border: 1px dotted black;
+        padding: 12px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header > h1 {
         margin-left: 10px;
+        flex: 0 0 200px;
+    }
+    header > nav {
+        border: 1px dotted black;
         display: flex;
-        flex-direction: row;
-    }
-
-
-    }
-    div.menu {
-        background-color: black;
-        margin: 5px;
-        margin-bottom: 7px;
-        padding: 10px;
+        flex: row wrap;
         justify-content: flex-end;
     }
+    header > nav > a {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        margin: 8px 5px
+
+    }
+
 
     main {
         background-color: white;
@@ -51,7 +63,7 @@
     body { 
         background-color: lightgray;
     }
-    div.menu:hover {
+    a:hover {
         background-color: rgb(192, 190, 188);
     }
 }

@@ -18,18 +18,22 @@
         margin-left: 10px;
     }
 
-    div.container {
+    nav {
         display: flex;
         flex-direction: column;
     }
-    div.menu {
+    nav > a {
         background-color: black;
         padding: 10px;
         flex: auto;
         text-align: center;
         margin: 5px 10px;
+        text-decoration: none;
+        color: white;   
     }
-
+    nav > a:hover {
+        background-color: rgb(175, 169, 161);
+    }
     main {
         background-color: white;
         margin: 5px 5px 5px 5px;
