@@ -3,68 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="fluminense48.png" type="image/x-icon">
-    <title>Desafio</title>
-    <style>
-        * { 
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h2, h1{
-            font-weight: bolder;
-            margin: 8px 5px;
-        }
-
-        p {
-            margin: 8px 5px;
-        }
-        section.flex-cont {
-            padding: 20px;
-            background-color: rgb(199, 199, 199);
-
-            display: flex;
-            flex-flow: column nowrap;
-        }
-
-        section > article {
-            border: 2px blue;
-        }
-
-        article.text-media {
-            display: flex;
-        }
-
-        article.text {
-            display: flex;
-        }
-        
-    </style>
+    <title>Conteúdo Flex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Exemplo de conteúdo flexivel</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta ab quidem veniam? Nesciunt culpa voluptas dolor illum a fuga nam maxime ab, deleniti necessitatibus quaerat provident earum sequi recusandae!</p>
+    <header class="normal">
+        <h1>Exemplo de conteúdo flexível</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore amet deleniti omnis vel qui incidunt, distinctio quam animi corrupti quae obcaecati eum voluptates quibusdam ea nisi delectus explicabo recusandae illo?</p>
     </header>
     <main>
-        <section class="flex-cont">
+        <section class="flex-content">
             <article class="media-text">
                 <div class="text">
-        <h2>Element Media > Text</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam nam nesciunt odit officia molestias omnis illum veritatis rerum a. Quas tempore fugiat expedita sed error voluptatem iusto eum rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non blanditiis unde magni delectus qui ea voluptatibus adipisci. Quaerat enim facere iste vero, beatae minus fugit quam deserunt porro nulla obcaecati!</p>
-        <img src="espacokj.png" alt="">
-        <h2>Elemento Text > media</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae voluptates facere qui pariatur neque voluptatem fuga ipsa hic eius, sunt eveniet autem libero et delectus eligendi aliquid blanditiis asperiores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quam ratione, culpa voluptatem quos, fugiat aliquam numquam laudantium ut quasi, architecto sapiente ipsum veritatis amet fugit quod reiciendis praesentium vel?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae atque qui illo ex consectetur quisquam esse exercitationem earum, natus porro, quaerat et distinctio maxime odio optio molestiae obcaecati mollitia culpa?</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=Bg07j3u_0pg3PRb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
+                    <h2>Elemento Media->Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde voluptatum hic soluta non. Harum non, dolor maxime accusantium ipsam voluptatibus nihil ea, minus alias, quo molestias excepturi vitae fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat porro, illo similique, quasi itaque maiores debitis sequi nobis laborum, nesciunt blanditiis nostrum soluta voluptates aliquam neque accusantium ut earum ipsa!</p>
+                </div>
+                <div class="media">
+                    <img src="espacokj.png" alt="Criando site flexbox">
+                </div>
+            </article>
+            <article class="text-media">
+                <div class="text">
+                    <h2>Elemento Text->Media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas ducimus velit consectetur voluptatum perspiciatis sunt laudantium fugiat ipsum quidem rem dolores accusantium ad enim, beatae nesciunt quos cum impedit!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima ea modi dolor quod numquam officiis in praesentium quas. Tenetur, saepe! Vitae eius nemo iusto obcaecati. Perferendis hic consequatur harum!</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E0K6mAhxSkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section> <!-- Fim da seção Flex-Content -->
+        <section class="normal">
+            <h2>Conteúdo normal</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem doloremque id nostrum quaerat omnis. Ad quaerat dolorem, architecto, incidunt ab odio rerum quidem iure earum consectetur ratione, fuga atque enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos nemo obcaecati amet? Odit architecto nam incidunt alias laborum inventore! Atque ea dicta explicabo numquam aliquid suscipit asperiores maxime. Natus.</p>
         </section>
-        </article>
-        </div>
     </main>
-    <footer>
-        <h2>Conteúdo Normal</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, fuga perferendis! Iure, accusamus praesentium? Quidem velit id ad odit animi, veniam inventore minima aut nihil pariatur nesciunt, non voluptates dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt doloribus molestias ea distinctio aliquam deleniti odit commodi magni eaque suscipit tempore laboriosam nisi, fuga qui earum. Nam, tenetur? Eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt et autem impedit explicabo reiciendis necessitatibus aut, error aperiam sunt tempora nesciunt accusantium rerum dicta accusamus corporis pariatur aspernatur libero?</p>
-    </footer>
 </body>
 </html>
