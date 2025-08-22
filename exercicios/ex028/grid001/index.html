@@ -10,8 +10,11 @@
             border: 3px solid blue;
             
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 100px 100px 100px;
+            /*grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;*/
+            grid-template: 100px 100px 100px / auto auto auto;
+
+
           /*  grid-auto-rows: 100px;
             grid-auto-columns: 100px; */
 
@@ -22,7 +25,7 @@
            /* align-content: space-between;
             justify-content: space-evenly; */
             place-content: space-between space-evenly;
-            
+
             /*Clicar inspecionar e depois em grid pra aprender melhor*/
         }
 
