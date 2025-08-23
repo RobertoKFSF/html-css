@@ -13,7 +13,11 @@
             /*grid-template-columns: auto auto auto;
             grid-template-rows: 100px 100px 100px;*/
             /*grid-template: 100px 100px 100px / auto auto auto; */
-            grid-template: repeat(3, 100px) / repeat(3, auto);
+            grid-template-rows: repeat(3, 80px);
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            grid-auto-rows: 80px;
+            grid-auto-flow: column;
+            grid-auto-columns: 120px;
 
             gap: 10px;
 
@@ -22,11 +26,11 @@
 
             /* align-items: stretch;
             justify-items: center; */
-            place-items: start center;
+            place-items: normal normal;
 
            /* align-content: space-between;
             justify-content: space-evenly; */
-            place-content: space-between end;
+            place-content: normal normal;
 
             /*Clicar inspecionar e depois em grid pra aprender melhor*/
         }
